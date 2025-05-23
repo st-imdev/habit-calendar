@@ -13,7 +13,7 @@ HEIGHT = DAYS * (CELL_SIZE + CELL_PADDING) + CELL_PADDING
 
 # Light theme (GitHub green) colors
 LIGHT_COLORS = [
-    (235, 237, 240),  # 0 habits (light gray)
+    (248, 248, 246),  # 0 habits (very light warm beige)
     (155, 233, 168),  # 1 habit (lightest green)
     (64, 196, 99),    # 2 habits (light green)
     (48, 161, 78),    # 3 habits (medium green)
