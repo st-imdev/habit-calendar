@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Response
 from fastapi.responses import HTMLResponse
-from calendar import generate_calendar_image, load_habit_data, WIDTH, HEIGHT
+from habit_calendar import generate_calendar_image, load_habit_data, WIDTH, HEIGHT
 import io
 
 app = FastAPI()
