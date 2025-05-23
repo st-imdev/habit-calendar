@@ -1,0 +1,17 @@
+{
+  "2024-05-20": {"exercise": true, "read": false, "meditate": false},
+  "2024-05-21": {"exercise": true, "read": true, "meditate": false},
+  "2024-05-22": {"exercise": true, "read": true, "meditate": true},
+  "2024-05-23": {"exercise": false, "read": false, "meditate": false},
+  "2024-05-24": {"exercise": true, "read": true, "meditate": true, "yoga": true},
+  "2024-05-25": {"exercise": false, "read": true, "meditate": false},
+  "2024-05-26": {"exercise": true, "read": true, "meditate": false, "yoga": true},
+  "2024-05-27": {"exercise": false, "read": false, "meditate": false},
+  "2024-05-28": {"exercise": true, "read": false, "meditate": true},
+  "2024-05-29": {"exercise": true, "read": true, "meditate": true, "yoga": true, "walk": true},
+  "2024-05-30": {"exercise": true, "read": false, "meditate": false},
+  "2024-05-31": {"exercise": true, "read": true, "meditate": false},
+  "2024-06-01": {"exercise": true, "read": false, "meditate": true},
+  "2024-06-02": {"exercise": true, "read": true, "meditate": false},
+  "2024-06-03": {"exercise": false, "read": true, "meditate": true}
+} 
