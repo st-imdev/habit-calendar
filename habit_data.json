@@ -147,6 +147,18 @@
   "2025-05-22": {"exercise": true, "read": true, "meditate": true, "water": true, "walk": true},
   "2025-05-23": {"exercise": true, "read": true, "meditate": false, "water": true, "journal": true, "walk": true},
   "2025-05-24": {"exercise": true, "read": true, "meditate": false, "water": true, "journal": true, "walk": true},
-  "2025-05-25": {"exercise": true, "read": true, "meditate": false, "water": true, "journal": true, "walk": true}
+  "2025-05-25": {"exercise": true, "read": true, "meditate": false, "water": true, "journal": true, "walk": true},
+  "2025-05-26": {"exercise": false, "read": false, "meditate": false, "water": false},
+  "2025-05-27": {"exercise": true, "read": true, "meditate": true, "water": true, "journal": true},
+  "2025-05-28": {"exercise": true, "read": true, "meditate": true, "water": true, "journal": true, "walk": true},
+  "2025-05-29": {"exercise": false, "read": true, "meditate": true, "water": true, "journal": true},
+  "2025-05-30": {"exercise": true, "read": false, "meditate": true, "water": true},
+  "2025-05-31": {"exercise": true, "read": true, "meditate": true, "water": true, "journal": true, "walk": true},
+  
+  "2025-06-01": {"exercise": true, "read": true, "meditate": true, "water": true, "journal": true, "walk": true},
+  "2025-06-02": {"exercise": false, "read": true, "meditate": true, "water": true},
+  "2025-06-03": {"exercise": true, "read": false, "meditate": true, "water": true, "journal": true},
+  "2025-06-04": {"exercise": true, "read": true, "meditate": true, "water": true, "walk": true},
+  "2025-06-05": {"exercise": false, "read": false, "meditate": false, "water": true}
 
 } 
