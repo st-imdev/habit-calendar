@@ -2,7 +2,7 @@ name: Update Habit Data
 
 on:
   schedule:
-    - cron: '0 12 * * *'  # Run daily at noon UTC
+    - cron: '0 5 * * *'  # Run daily at 6am UK time (5am UTC)
   workflow_dispatch:  # Allow manual trigger
 
 jobs:
