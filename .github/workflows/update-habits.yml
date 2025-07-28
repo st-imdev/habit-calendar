@@ -5,6 +5,9 @@ on:
     - cron: '0 5 * * *'  # Run daily at 6am UK time (5am UTC)
   workflow_dispatch:  # Allow manual trigger
 
+permissions:
+  contents: write
+
 jobs:
   update-habits:
     runs-on: ubuntu-latest
