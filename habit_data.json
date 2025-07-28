@@ -1408,5 +1408,37 @@
     "read": false,
     "exercise": true,
     "walk": true
+  },
+  "2025-07-28": {
+    "water": true,
+    "journal": true,
+    "meditate": true,
+    "read": true,
+    "exercise": false,
+    "walk": true
+  },
+  "2025-07-25": {
+    "water": true,
+    "journal": true,
+    "meditate": true,
+    "read": true,
+    "exercise": true,
+    "walk": true
+  },
+  "2025-07-26": {
+    "water": true,
+    "journal": true,
+    "meditate": true,
+    "read": false,
+    "exercise": true,
+    "walk": true
+  },
+  "2025-07-27": {
+    "water": true,
+    "journal": true,
+    "meditate": true,
+    "read": true,
+    "exercise": false,
+    "walk": true
   }
 }
