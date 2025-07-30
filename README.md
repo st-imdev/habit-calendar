@@ -1,10 +1,10 @@
 # Habit Tracker
 
-A minimalist row-based habit tracker that automatically updates daily and displays your last two weeks of habits as a clean, embeddable image.
+A minimalist row-based habit tracker that automatically updates daily and displays your last three weeks of habits as a clean, embeddable image.
 
 ## What This Does
 
-- **Displays 5 core habits** in a compact row-based layout showing the last 14 days
+- **Displays 5 core habits** in a compact row-based layout showing the last 21 days
 - **Shows dates in US format** (M/D) for easy daily tracking
 - **Auto-updates daily** via GitHub Actions with realistic random data
 - **Shows progression** - habits get more consistent over time (60% → 90% success rate)

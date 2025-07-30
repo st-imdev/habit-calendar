@@ -8,7 +8,7 @@ import os
 SCALE = 2
 CELL_SIZE = 20 * SCALE  # Slightly larger cells for better visibility
 CELL_PADDING = 3 * SCALE
-DAYS_TO_SHOW = 14  # Show last two weeks
+DAYS_TO_SHOW = 21  # Show last three weeks
 HABIT_LABEL_WIDTH = 90 * SCALE  # Width for habit names
 FONT_SIZE = 11 * SCALE
 
@@ -89,11 +89,11 @@ def load_habit_data(path="habit_data.json"):
         return json.load(f)
 
 def get_last_days_data(habit_data):
-    """Get habit data for the last 14 days"""
+    """Get habit data for the last 21 days"""
     today = datetime.today().date()
     days_data = []
     
-    for i in range(DAYS_TO_SHOW - 1, -1, -1):  # Start from 13 days ago to today
+    for i in range(DAYS_TO_SHOW - 1, -1, -1):  # Start from 20 days ago to today
         date = today - timedelta(days=i)
         date_str = date.strftime("%Y-%m-%d")
         day_habits = habit_data.get(date_str, {})
