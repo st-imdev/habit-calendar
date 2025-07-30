@@ -1,13 +1,14 @@
-# Habit Calendar
+# Habit Tracker
 
-A GitHub-style habit tracking calendar that automatically updates daily with habit data and displays it as a visual calendar.
+A minimalist row-based habit tracker that automatically updates daily and displays your last two weeks of habits as a clean, embeddable image.
 
 ## What This Does
 
-- **Displays habit data** as a GitHub-style contribution calendar
+- **Displays 5 core habits** in a compact row-based layout showing the last 14 days
+- **Shows dates in US format** (M/D) for easy daily tracking
 - **Auto-updates daily** via GitHub Actions with realistic random data
 - **Shows progression** - habits get more consistent over time (60% → 90% success rate)
-- **Serves calendar images** via FastAPI for embedding anywhere
+- **Serves tracker images** via FastAPI for embedding anywhere (perfect for blog headers)
 
 ## Quick Start
 
@@ -30,12 +31,12 @@ A GitHub-style habit tracking calendar that automatically updates daily with hab
 - Commits updated `habit_data.json` back to your repo
 - No local server needed - runs entirely on GitHub's infrastructure
 
-### Habit Difficulty Levels
-- **Water**: Easiest (+20% success bonus)
-- **Journal**: Pretty easy (+10% bonus)
-- **Walk**: Slightly easier (+5% bonus)
-- **Meditate/Read**: Baseline difficulty
-- **Exercise**: Hardest (-10% penalty)
+### Tracked Habits (5 Core Habits)
+- **Water**: Easiest (+20% success bonus) - Stay hydrated
+- **Journal**: Pretty easy (+10% bonus) - Daily reflection
+- **Meditate**: Baseline difficulty - Mindfulness practice
+- **Read**: Baseline difficulty - Knowledge & growth
+- **Exercise**: Hardest (-10% penalty) - Physical fitness
 
 ### API Endpoints
 - `GET /` - Web interface showing both light/dark themes
@@ -113,8 +114,12 @@ python update_habits.py
 ## Customization
 
 ### Change Habit Types
-Edit the `habit_probs` dictionary in `update_habits.py`:
+Edit the `HABITS_TO_TRACK` list in `habit_calendar.py` and the `habit_probs` dictionary in `update_habits.py`:
 ```python
+# In habit_calendar.py
+HABITS_TO_TRACK = ["exercise", "read", "meditate", "water", "journal"]
+
+# In update_habits.py
 habit_probs = {
     "water": current_prob + 0.2,
     "your_habit": current_prob,  # Add new habits here
@@ -128,13 +133,15 @@ improvement_rate = 0.5 / 365  # Improve by 50% over the year
 ```
 
 ### Change Colors/Themes
-Edit the color arrays in `habit_calendar.py`:
+Edit the color constants in `habit_calendar.py`:
 ```python
-LIGHT_COLORS = [
-    (248, 248, 246),  # 0 habits
-    (155, 233, 168),  # 1 habit
-    # ... more colors
-]
+# Light theme colors
+LIGHT_COMPLETED_COLOR = (64, 196, 99)  # Green for completed
+LIGHT_MISSED_COLOR = (248, 248, 246)   # Light beige for missed
+
+# Dark theme colors  
+DARK_COMPLETED_COLOR = (74, 126, 255)  # Blue for completed
+DARK_MISSED_COLOR = (48, 54, 61)       # Dark gray for missed
 ```
 
 ## Development

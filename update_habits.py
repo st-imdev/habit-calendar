@@ -42,7 +42,6 @@ def auto_update_habits(path="habit_data.json"):
         "meditate": current_prob,         # Baseline
         "read": current_prob,             # Baseline  
         "exercise": current_prob - 0.1,   # Slightly harder
-        "walk": current_prob + 0.05,      # Easy when weather's good
     }
     
     # Generate today's habits
