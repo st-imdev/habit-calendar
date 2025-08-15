@@ -1561,5 +1561,12 @@
     "meditate": true,
     "read": false,
     "exercise": true
+  },
+  "2025-08-15": {
+    "water": true,
+    "journal": true,
+    "meditate": false,
+    "read": true,
+    "exercise": true
   }
 }
